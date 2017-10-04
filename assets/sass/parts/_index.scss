@@ -1,0 +1,1277 @@
+@include max-screen($breakpoint-sp) {
+  .sns-block {
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+    ul {
+      list-style-type: none;
+      overflow: hidden;
+      li {
+        margin: 0 0 10px;
+        a {
+          width: 44px;
+          display: block;
+          img {
+            width: 100%;
+          }
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .keyvisual {
+    width: 100%;
+    background: #060404;
+    position: relative;
+    h2 {
+      width: 100%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .story {
+    padding: 40px 0 100px;
+    background: url(../img/sp_bg_story.png) no-repeat center top, url(../img/sp_bg_story_03.png) no-repeat bottom center;
+    background-size: 100%;
+    h2 {
+      width: 112px;
+      margin: 0 auto 40px;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      width: 90%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .present {
+    background: #f4a9b8;
+    .inner {
+      background: url(../img/sp_bg_present.png) no-repeat center bottom;
+      background-size: 100%;
+      height: 660px;
+      padding: 50px 0;
+      p {
+        width: 86%;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 2.2;
+        letter-spacing: 1px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .blog {
+    padding: 20px 0 50px;
+    background: #FFF;
+    .inner {
+      h2 {
+        width: 142px;
+        margin: 0 auto 110px;
+        img {
+          width: 100%;
+        }
+      }
+      h3 {
+        width: 294px;
+        margin: 0 auto;
+        position: relative;
+        img {
+          width: 100%;
+        }
+        &:before {
+          content: "";
+          background: url(../img/sp_icon_blog_01.png) no-repeat;
+          background-size: 100%;
+          width: 199px;
+          height: 86px;
+          display: block;
+          position: absolute;
+          top: -100px;
+          left: 0;
+        }
+        &:after {
+          content: "";
+          background: url(../img/sp_icon_blog_02.png) no-repeat;
+          background-size: 100%;
+          width: 65px;
+          height: 150px;
+          display: block;
+          position: absolute;
+          top: -160px;
+          right: -10px;
+        }
+      }
+    }
+    .twitter-widget {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .visit {
+    padding: 40px 0 120px;
+    background: url(../img/bg_visit.png) no-repeat top right;
+    background-size: 90%;
+    position: relative;
+    margin: 0 0 30px;
+    .inner {
+      h2 {
+        width: 117px;
+        margin: 0 auto 20px;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 2;
+        margin: 0 auto 40px;
+        width: 92%;
+        span {
+          font-size: 15px;
+          color: #534349;
+          display: block;
+          margin: 0 0 20px;
+        }
+      }
+      .code {
+        text-align: center;
+        margin: 0 auto 20px;
+        width: 90%;
+        img {
+          width: 100%;
+        }
+      }
+      p.meet {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        position: relative;
+        &:after {
+          content: "";
+          background: url(../img/sp_icon_code.png) no-repeat;
+          background-size: 100%;
+          width: 82px;
+          height: 93px;
+          display: block;
+          position: absolute;
+          top: 80px;
+          right: 20px;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      background: url(../img/sp_icon_arrow.png) no-repeat;
+      background-size: 100%;
+      width: 112px;
+      height: 93px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin: 0 0 0 -56px;
+    }
+  }
+
+  .join {
+    .inner {
+      h2 {
+        width: 160px;
+        margin: 0 auto 30px;
+        img {
+          width: 100%;
+        }
+      }
+      > p {
+        line-height: 2;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        width: 86%;
+        margin: 0 auto 30px;
+      }
+      .method-01 {
+        margin: 0 0 60px;
+        h3 {
+          width: 80%;
+          background: #FFF;
+          color: #E95471;
+          text-align: left;
+          line-height: 1.5;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0 auto 30px;
+          position: relative;
+          padding: 6px 0 6px 70px;
+          &:before {
+            content: "";
+            background: url(../img/sp_icon_method_01_01.png) no-repeat;
+            background-size: 100%;
+            width: 93px;
+            height: 93px;
+            display: block;
+            position: absolute;
+            top: -18px;
+            left: -30px;
+          }
+          &:after {
+            content: "";
+            background: url(../img/sp_icon_method_01_02.png) no-repeat;
+            background-size: 100%;
+            width: 66px;
+            height: 77px;
+            display: block;
+            position: absolute;
+            top: -64px;
+            right: -26px;
+          }
+        }
+        p {
+          line-height: 2;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: center;
+          width: 86%;
+          margin: 0 auto 20px;
+        }
+        ul {
+          list-style-type: none;
+          overflow: hidden;
+          padding: 30px 0 0;
+          width: 92%;
+          margin: 0 auto 30px;
+          li {
+            float: left;
+            margin: 0 2% 30px 0;
+            background: #ef8297;
+            width: 49%;
+            border-radius: 25px;
+            position: relative;
+            padding: 26px 0;
+            min-height: 184px;
+            h4 {
+              position: absolute;
+              left: 50%;
+              top: -20px;
+              margin: 0 0 0 -20px;
+              width: 40px;
+              img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+              }
+              img.pc-on {
+                display: none;
+              }
+            }
+            p {
+              color: #FFF;
+              width: auto;
+              text-align: center;
+              line-height: 1.5;
+              font-size: 14px;
+            }
+            &:nth-child(1) {
+              &:after {
+                content: "";
+                background: url(../img/sp_icon_methodList_01_01.png) no-repeat;
+                background-size: 100%;
+                width: 60px;
+                height: 50px;
+                display: block;
+                position: absolute;
+                bottom: 16px;
+                left: 50%;
+                margin: 0 0 0 -30px;
+              }
+            }
+            &:nth-child(2) {
+              margin: 0 0 30px;
+              padding: 26px 0;
+              &:after {
+                content: "";
+                background: url(../img/sp_icon_methodList_01_02.png) no-repeat;
+                background-size: 100%;
+                width: 128px;
+                height: 74px;
+                display: block;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                margin: 0 0 0 -64px;
+              }
+            }
+            &:nth-child(3) {
+              margin: 0 2% 0 0;
+              padding: 26px 0;
+              p {
+                span {
+                  display: block;
+                }
+              }
+              &:after {
+                content: "";
+                background: url(../img/sp_icon_methodList_01_03.png) no-repeat;
+                background-size: 100%;
+                width: 121px;
+                height: 67px;
+                display: block;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                margin: 0 0 0 -60.5px;
+              }
+            }
+            &:nth-child(4) {
+              margin: 0;
+              padding: 26px 0;
+              &:after {
+                content: "";
+                background: url(../img/sp_icon_methodList_01_04.png) no-repeat;
+                background-size: 100%;
+                width: 100px;
+                height: 55px;
+                display: block;
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                margin: 0 0 0 -50px;
+              }
+            }
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .method-02 {
+        margin: 0 0 60px;
+        h3 {
+          width: 80%;
+          background: #FFF;
+          color: #534349;
+          text-align: left;
+          line-height: 1.5;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0 auto 30px;
+          position: relative;
+          padding: 6px 0 6px 70px;
+          &:before {
+            content: "";
+            background: url(../img/sp_icon_method_02_01.png) no-repeat;
+            background-size: 100%;
+            width: 93px;
+            height: 93px;
+            display: block;
+            position: absolute;
+            top: -18px;
+            left: -30px;
+          }
+          &:after {
+            content: "";
+            background: url(../img/sp_icon_method_02_02.png) no-repeat;
+            background-size: 100%;
+            width: 66px;
+            height: 77px;
+            display: block;
+            position: absolute;
+            top: -64px;
+            right: -26px;
+          }
+        }
+        p {
+          line-height: 2;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: center;
+          width: 90%;
+          margin: 0 auto 20px;
+        }
+        ul {
+          list-style-type: none;
+          overflow: hidden;
+          padding: 30px 0 0;
+          width: 92%;
+          margin: 0 auto 30px;
+          li {
+            float: left;
+            margin: 0 2% 30px 0;
+            background: #534349;
+            width: 49%;
+            border-radius: 25px;
+            position: relative;
+            padding: 26px 0;
+            min-height: 184px;
+            h4 {
+              position: absolute;
+              left: 50%;
+              top: -20px;
+              margin: 0 0 0 -20px;
+              width: 40px;
+              img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+              }
+              img.pc-on {
+                display: none;
+              }
+            }
+            p {
+              color: #FFF;
+              width: auto;
+              text-align: center;
+              line-height: 1.5;
+              font-size: 13px;
+              span {
+                color: #FFFAB7;
+              }
+            }
+            &:nth-child(1) {
+              &:after {
+                content: "";
+                background: url(../img/sp_icon_methodList_01_01.png) no-repeat;
+                background-size: 100%;
+                width: 60px;
+                height: 50px;
+                display: block;
+                position: absolute;
+                bottom: 16px;
+                left: 50%;
+                margin: 0 0 0 -30px;
+              }
+            }
+            &:nth-child(2) {
+              margin: 0 0 30px;
+              padding: 26px 0;
+              &:after {
+                content: "";
+                background: url(../img/sp_icon_methodList_02_02.png) no-repeat;
+                background-size: 100%;
+                width: 128px;
+                height: 74px;
+                display: block;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                margin: 0 0 0 -64px;
+              }
+            }
+            &:nth-child(3) {
+              margin: 0 2% 0 0;
+              padding: 26px 0;
+              p {
+                span {
+                  display: block;
+                }
+              }
+              &:after {
+                content: "";
+                background: url(../img/sp_icon_methodList_02_03.png) no-repeat;
+                background-size: 100%;
+                width: 121px;
+                height: 67px;
+                display: block;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                margin: 0 0 0 -60.5px;
+              }
+            }
+            &:nth-child(4) {
+              margin: 0;
+              padding: 0;
+              background: none;
+              img {
+                width: 100%;
+              }
+            }
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .present-img {
+        text-align: center;
+        margin: 0 0 30px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .voice {
+    padding: 40px 0;
+    background: #E5E4E5;
+    .inner {
+      h2 {
+        width: 131px;
+        margin: 0 auto 20px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .event {
+    padding: 40px 0;
+    background: #FFF791;
+    .inner {
+      h2 {
+        width: 150px;
+        margin: 0 auto 30px;
+        position: relative;
+        img {
+          width: 100%;
+        }
+        &:after {
+          content: "";
+          background: url(../img/sp_icon_event_01.png) no-repeat;
+          background-size: 100%;
+          width: 56px;
+          height: 112px;
+          display: block;
+          position: absolute;
+          top: -46px;
+          right: -70px;
+        }
+      }
+      p {
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 2;
+        margin: 0 0 30px;
+        position: relative;
+        letter-spacing: 1px;
+        &:after {
+          content: "";
+          background: url(../img/sp_icon_event_02.png) no-repeat;
+          background-size: 100%;
+          width: 65px;
+          height: 81px;
+          display: block;
+          position: absolute;
+          top: -86px;
+          left: 20px;
+        }
+      }
+      .event-area {
+        background: #FFF;
+        border-radius: 14px;
+        width: 90%;
+        margin: 0 auto 20px;
+        padding: 20px 0 20px;
+        dl {
+          width: 90%;
+          margin: 0 auto 20px;
+          font-size: 12px;
+          font-weight: bold;
+          position: relative;
+        }
+        .area-01 {
+          &:before {
+            content: "";
+            background: url(../img/sp_icon_event_03.png) no-repeat;
+            background-size: 100%;
+            width: 54px;
+            height: 90px;
+            display: block;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+          }
+        }
+        .area-04 {
+          &:after {
+            content: "";
+            background: url(../img/sp_icon_event_04.png) no-repeat;
+            background-size: 100%;
+            width: 45px;
+            height: 90px;
+            display: block;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+          }
+        }
+      }
+    }
+  }
+  .goods-list {
+    text-align: center;
+    img {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+  }
+  .other {
+    padding: 40px 0;
+    .inner {
+      h2 {
+        margin: 0 auto 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .terms {
+        width: 90%;
+        margin: 0 auto;
+        background: #FFF;
+        overflow: auto;
+        padding: 16px;
+        height: 200px;
+        font-size: 12px;
+        h3 {
+          margin: 20px 0;
+          text-align: center;
+        }
+        p {
+          margin: 0 0 10px;
+        }
+        ul {
+          padding: 0 0 0 20px;
+          margin: 0 0 20px;
+        }
+        ol {
+          padding: 0 0 0 20px;
+          margin: 0 0 20px;
+        }
+        .caution {
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include min-screen($breakpoint-pc) {
+  .keyvisual {
+    width: 100%;
+    background: #060404;
+    h2 {
+      width: 1000px;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .story {
+    padding: 80px 0 150px;
+    background: url(../img/bg_story_01.png) no-repeat left top, url(../img/bg_story_02.png) no-repeat right top, url(../img/bg_story_03.png) no-repeat bottom center;
+    h2 {
+      width: 186px;
+      margin: 0 auto 80px;
+    }
+    p {
+      width: 642px;
+      margin: 0 auto;
+    }
+  }
+
+  .present {
+    background: #f4a9b8;
+    .inner {
+      background: url(../img/bg_present.png) no-repeat center bottom;
+      height: 800px;
+      padding: 50px 0;
+      p {
+        width: 830px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 2.6;
+        letter-spacing: 2px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .blog {
+    padding: 40px 0 100px;
+    background: #FFF;
+    .inner {
+      h2 {
+        width: 176px;
+        margin: 0 auto 40px;
+      }
+      h3 {
+        width: 424px;
+        margin: 0 auto;
+        position: relative;
+        &:before {
+          content: "";
+          background: url(../img/icon_blog_01.png) no-repeat;
+          width: 228px;
+          height: 100px;
+          display: block;
+          position: absolute;
+          top: -120px;
+          left: -130px;
+        }
+        &:after {
+          content: "";
+          background: url(../img/icon_blog_02.png) no-repeat;
+          width: 100px;
+          height: 232px;
+          display: block;
+          position: absolute;
+          top: -120px;
+          right: -180px;
+        }
+      }
+    }
+    .twitter-widget {
+      width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  .visit {
+    padding: 80px 0 160px;
+    background: url(../img/bg_visit.png) no-repeat top right;
+    position: relative;
+    margin: 0 0 30px;
+    .inner {
+      h2 {
+        width: 148px;
+        margin: 0 auto 40px;
+      }
+      p {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 2;
+        margin: 0 0 40px;
+        span {
+          display: block;
+        }
+      }
+      .code {
+        text-align: center;
+        margin: 0 0 40px;
+        img {
+          margin: 0 auto;
+        }
+      }
+      p.meet {
+        width: 790px;
+        margin: 0 auto;
+        font-size: 26px;
+        text-align: left;
+        letter-spacing: 3px;
+        position: relative;
+        &:after {
+          content: "";
+          background: url(../img/icon_code.png) no-repeat;
+          width: 124px;
+          height: 140px;
+          display: block;
+          position: absolute;
+          top: -30px;
+          right: -70px;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      background: url(../img/icon_arrow.png) no-repeat;
+      width: 148px;
+      height: 123px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin: 0 0 0 -74px;
+    }
+  }
+
+  .join {
+    .inner {
+      h2 {
+        width: 200px;
+        margin: 0 auto 30px;
+      }
+      > p {
+        text-align: center;
+        margin: 0 0 60px;
+      }
+      .method-01 {
+        margin: 0 0 60px;
+        h3 {
+          width: 900px;
+          background: #FFF;
+          color: #E95471;
+          text-align: center;
+          line-height: 2;
+          font-size: 26px;
+          font-weight: bold;
+          margin: 0 auto 60px;
+          position: relative;
+          &:before {
+            content: "";
+            background: url(../img/icon_method_01_01.png) no-repeat;
+            width: 106px;
+            height: 106px;
+            display: block;
+            position: absolute;
+            top: -30px;
+            left: -60px;
+          }
+          &:after {
+            content: "";
+            background: url(../img/icon_method_01_02.png) no-repeat;
+            width: 90px;
+            height: 98px;
+            display: block;
+            position: absolute;
+            top: -36px;
+            right: -30px;
+          }
+        }
+        p {
+          line-height: 2;
+          font-size: 24px;
+          font-weight: bold;
+          width: 900px;
+          margin: 0 auto 40px;
+          span {
+            display: block;
+            font-size: 18px;
+            font-weight: normal;
+          }
+        }
+        ul {
+          list-style-type: none;
+          overflow: hidden;
+          padding: 30px 0 0;
+          width: 1000px;
+          margin: 0 auto 30px;
+          li {
+            float: left;
+            margin: 0 20px 0 0;
+            background: #ef8297;
+            width: 235px;
+            border-radius: 25px;
+            position: relative;
+            padding: 50px 0;
+            min-height: 280px;
+            h4 {
+              position: absolute;
+              left: 50%;
+              top: -16px;
+              margin: 0 0 0 -24px;
+              img {
+                display: block;
+                margin: 0 auto;
+              }
+              img.sp-on {
+                display: none;
+              }
+            }
+            p {
+              color: #FFF;
+              width: auto;
+              text-align: center;
+              line-height: 1.5;
+              font-size: 22px;
+              span {
+                color: #FFFAB7;
+                font-size: 22px;
+                font-weight: bold;
+              }
+            }
+            &:nth-child(1) {
+              &:after {
+                content: "";
+                background: url(../img/icon_methodList_01_01.png) no-repeat;
+                width: 80px;
+                height: 66px;
+                display: block;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                margin: 0 0 0 -40px;
+              }
+            }
+            &:nth-child(2) {
+              padding: 50px 0;
+              &:after {
+                content: "";
+                background: url(../img/icon_methodList_01_02.png) no-repeat;
+                width: 172px;
+                height: 96px;
+                display: block;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                margin: 0 0 0 -86px;
+              }
+            }
+            &:nth-child(3) {
+              padding: 50px 0;
+              p {
+                span {
+                  display: block;
+                }
+              }
+              &:after {
+                content: "";
+                background: url(../img/icon_methodList_01_03.png) no-repeat;
+                width: 162px;
+                height: 90px;
+                display: block;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                margin: 0 0 0 -81px;
+              }
+            }
+            &:nth-child(4) {
+              padding: 50px 0;
+              &:after {
+                content: "";
+                background: url(../img/icon_methodList_01_04.png) no-repeat;
+                width: 134px;
+                height: 73px;
+                display: block;
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                margin: 0 0 0 -67px;
+              }
+            }
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .method-02 {
+        h3 {
+          width: 900px;
+          background: #FFF;
+          color: #534349;
+          text-align: center;
+          line-height: 2;
+          position: relative;
+          font-size: 26px;
+          font-weight: bold;
+          margin: 0 auto 60px;
+          &:before {
+            content: "";
+            background: url(../img/icon_method_02_01.png) no-repeat;
+            width: 106px;
+            height: 106px;
+            display: block;
+            position: absolute;
+            top: -30px;
+            left: -60px;
+          }
+          &:after {
+            content: "";
+            background: url(../img/icon_method_02_02.png) no-repeat;
+            width: 90px;
+            height: 98px;
+            display: block;
+            position: absolute;
+            top: -36px;
+            right: -30px;
+          }
+        }
+        p {
+          line-height: 2;
+          font-size: 24px;
+          font-weight: bold;
+          width: 900px;
+          margin: 0 auto 40px;
+        }
+        ul {
+          list-style-type: none;
+          overflow: hidden;
+          padding: 30px 0 0;
+          width: 1000px;
+          margin: 0 auto 30px;
+          li {
+            float: left;
+            margin: 0 20px 0 0;
+            background: #534349;
+            width: 310px;
+            border-radius: 25px;
+            position: relative;
+            padding: 50px 0;
+            min-height: 280px;
+            h4 {
+              position: absolute;
+              left: 50%;
+              top: -16px;
+              margin: 0 0 0 -24px;
+              img {
+                display: block;
+                margin: 0 auto;
+              }
+            }
+            p {
+              color: #FFF;
+              width: auto;
+              text-align: center;
+              line-height: 1.5;
+              font-size: 22px;
+              span {
+                color: #FFFAB7;
+                font-size: 22px;
+                font-weight: bold;
+              }
+            }
+            &:nth-child(1) {
+              &:after {
+                content: "";
+                background: url(../img/icon_methodList_01_01.png) no-repeat;
+                width: 80px;
+                height: 66px;
+                display: block;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                margin: 0 0 0 -40px;
+              }
+            }
+            &:nth-child(2) {
+              padding: 50px 0;
+              width: 340px;
+              &:after {
+                content: "";
+                background: url(../img/icon_methodList_02_02.png) no-repeat;
+                width: 172px;
+                height: 90px;
+                display: block;
+                position: absolute;
+                bottom: 26px;
+                left: 50%;
+                margin: 0 0 0 -86px;
+              }
+            }
+            &:nth-child(3) {
+              padding: 50px 0;
+              margin: 0;
+              p {
+                span {
+                  display: block;
+                }
+              }
+              &:after {
+                content: "";
+                background: url(../img/icon_methodList_02_03.png) no-repeat;
+                width: 162px;
+                height: 90px;
+                display: block;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                margin: 0 0 0 -81px;
+              }
+            }
+            &:nth-child(4) {
+              padding: 50px 0;
+              &:after {
+                content: "";
+                background: url(../img/icon_methodList_02_04.png) no-repeat;
+                width: 134px;
+                height: 73px;
+                display: block;
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                margin: 0 0 0 -67px;
+              }
+            }
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .present-img {
+        text-align: center;
+        margin: 0 0 30px;
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .voice {
+    padding: 80px 0;
+    background: #E5E4E5;
+    .inner {
+      h2 {
+        width: 163px;
+        margin: 0 auto 30px;
+      }
+    }
+  }
+  .event {
+    padding: 80px 0;
+    background: #FFF791;
+    .inner {
+      h2 {
+        width: 186px;
+        margin: 0 auto 30px;
+      }
+      p {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 2;
+        margin: 0 0 30px;
+        position: relative;
+        letter-spacing: 2px;
+        &:after {
+          content: "";
+          background: url(../img/icon_event_01.png) no-repeat;
+          width: 114px;
+          height: 223px;
+          display: block;
+          position: absolute;
+          bottom: 50px;
+          right: 86px;
+        }
+      }
+      .event-area {
+        background: #FFF;
+        border-radius: 30px;
+        width: 860px;
+        margin: 0 auto 60px;
+        padding: 60px 0 20px;
+        dl {
+          width: 660px;
+          margin: 0 0 40px 150px;
+          font-size: 20px;
+          font-weight: bold;
+          position: relative;
+        }
+        .area-01 {
+          &:before {
+            content: "";
+            background: url(../img/icon_event_02.png) no-repeat;
+            width: 125px;
+            height: 156px;
+            display: block;
+            position: absolute;
+            top: -130px;
+            left: -160px;
+          }
+        }
+        .area-02 {
+          &:after {
+            content: "";
+            background: url(../img/icon_event_03.png) no-repeat;
+            width: 105px;
+            height: 170px;
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 30px;
+          }
+        }
+        .area-03 {
+          &:before {
+            content: "";
+            background: url(../img/icon_event_04.png) no-repeat;
+            width: 88px;
+            height: 173px;
+            display: block;
+            position: absolute;
+            top: 80px;
+            left: -140px;
+          }
+        }
+        .area-04 {
+          &:after {
+            content: "";
+            background: url(../img/icon_event_05.png) no-repeat;
+            width: 84px;
+            height: 176px;
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 120px;
+          }
+        }
+      }
+    }
+  }
+  .goods-list {
+    text-align: center;
+    img {
+      margin: 0 0 30px;
+    }
+  }
+  .other {
+    padding: 80px 0;
+    .inner {
+      h2 {
+        margin: 0 auto 60px;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .terms {
+        width: 800px;
+        margin: 0 auto;
+        background: #FFF;
+        overflow: auto;
+        padding: 30px;
+        height: 400px;
+        h3 {
+          margin: 30px 0;
+          text-align: center;
+        }
+        p {
+          margin: 0 0 20px;
+        }
+        ul {
+          padding: 0 0 0 20px;
+          margin: 0 0 30px;
+        }
+        ol {
+          padding: 0 0 0 20px;
+          margin: 0 0 30px;
+        }
+        .caution {
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+}

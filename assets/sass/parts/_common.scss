@@ -1,0 +1,302 @@
+@charset "UTF-8";
+body {
+  font-family: -apple-system, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', 'メイリオ', meiryo, sans-serif;
+  color: #333;
+  background: #c2c2c3;
+}
+@include max-screen($breakpoint-sp) {
+  .sp-on {
+    display: block;
+  }
+  .pc-on {
+    display: none;
+  }
+  .inner {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header {
+    position: relative;
+    background: #FFF;
+    .inner {
+      padding: 16px 0;
+      h1 {
+        text-align: center;
+        width: 133px;
+        margin: 0 auto;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .drawer-nav {
+    ul {
+      li {
+        margin: 0 0 30px;
+        a {
+          display: block;
+          width: 107px;
+          margin: 0 auto;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    background: #FFF;
+    padding: 5px 0 45px;
+    text-align: center;
+    position: relative;
+    a {
+      position: absolute;
+      display: block;
+      background: rgba(0,0,0,.6);
+      width: 100%;
+      height: 40px;
+      color: #FFF;
+      text-align: center;
+      line-height: 40px;
+      bottom: 0;
+      &:before {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        border-top: 3px solid #FFF;
+        border-right: 3px solid #FFF;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        left: 40%;
+        top: 16px;
+        margin: 0 0 0 -6px;
+      }
+    }
+    .copyright {
+      font-size: 10px;
+    }
+  }
+
+}
+
+@include min-screen($breakpoint-pc) {
+  .sp-on {
+    display: none;
+  }
+  .pc-on {
+    display: block;
+  }
+  .inner {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+  }
+  header {
+    position: relative;
+    background: #FFF;
+    .inner {
+      padding: 16px 0;
+      h1 {
+        text-align: center;
+        width: 108px;
+        margin: 0 auto;
+      }
+      .sns-block {
+        position: absolute;
+        top: 13px;
+        right: 20px;
+        ul {
+          list-style-type: none;
+          overflow: hidden;
+          li {
+            float: left;
+            margin: 0 20px 0 0;
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+      button {
+        display: none!important;
+      }
+    }
+  }
+  nav {
+    background: #FFF;
+    ul {
+      list-style-type: none;
+      overflow: hidden;
+      margin: 0 auto;
+      width: 935px;
+      li {
+        float: left;
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+  footer {
+    background: #FFF;
+    padding: 5px 0;
+    text-align: center;
+    position: relative;
+    a {
+      position: absolute;
+      display: block;
+      background: rgba(0,0,0,.6);
+      width: 80px;
+      height: 80px;
+      color: #FFF;
+      text-align: center;
+      border-radius: 12px;
+      line-height: 80px;
+      top: -100px;
+      right: 10%;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      &:hover {
+        opacity: .6;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        border-top: 3px solid #FFF;
+        border-right: 3px solid #FFF;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        left: 50%;
+        top: 16px;
+        margin: 0 0 0 -6px;
+      }
+    }
+  }
+}
+
+
+
+.bottom-sns-block {
+  background: #F5F1E9 ; /* 背景色 */
+}
+.social-area-syncer {
+  width: 100% ;
+  min-height: 190px ;
+  padding: 1.5em 0 ;
+}
+
+/* デスクトップPCでは高さを拡張する */
+@media screen and ( min-width:480px ) {
+  .social-area-syncer {
+    min-height: 119px ;
+  }
+}
+
+
+/******************************
+
+ [ul]要素
+
+******************************/
+/* スマホ */
+ul.social-button-syncer {
+  width: 238px ;
+  margin: 24px auto ;
+  padding: 0 ;
+  border: none ;
+  list-style-type: none ;
+}
+
+/* デスクトップ */
+@media screen and ( min-width:480px ) {
+  ul.social-button-syncer {
+    width: 410px ;
+  }
+}
+
+
+/******************************
+
+ [li]要素
+
+******************************/
+ul.social-button-syncer li {
+  float: left ;
+  text-align: center ;
+  height: 71px ;
+  margin: 0 8px ;
+  padding:0 ;
+}
+
+
+/******************************
+
+ 各種ボタン
+
+******************************/
+/* [Twitter] */
+.sc-tw {
+  width: 71px ;
+}
+
+.sc-tw svg {
+  width: 30px ;
+  height: 30px ;
+ }
+
+.sc-tw a {
+  height: 56px ;
+  margin: 0 auto ;
+  padding-top: 6px ;
+  display: block ;
+  background: #1B95E0 ;
+  font-size: 12px ;
+  color: #fff ;
+  font-weight: 700 ;
+  text-decoration: none ;
+  letter-spacing: .5px ;
+  border-radius: 2px ;
+}
+
+.sc-tw a:hover {
+  color: #fff ;
+  background: #0c7abf ;
+}
+
+.sc-tw span:before {
+  white-space: pre ;
+  content: '\A' ;
+}
+
+/* [Facebook] */
+.sc-fb {
+  z-index: 99 ;
+  width: 69px ;
+}
+
+/* [LINE] */
+.sc-li {
+  width: 50px ;
+}
+
+.sc-li-img {
+  border: none ;
+  margin: 0 auto ;
+  padding:0 ;
+  width: 36px ;
+  height: 60px ;
+}
+
+/* デスクトップPCではLINEボタンを表示しない */
+@media screen and ( min-width:480px ) {
+  .sc-li {
+    display: none ;
+  }
+}

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "compass";
+
+// mixin 指定 ここから
+
+// color設定
+$black:#333;
+$white:#FFF;
+$gray:#CCC;
+$green:#118df0;
+$blue:#004182;
+$lightgreen:#DF760B;
+$pink:#d685b0;
+$yellow:#fbffa3;
+$orange:#eabf4c;
+$red: #ff4b68;
+
+// IE9 gradation
+$experimental-support-for-svg: true;
+
+// gradation
+@mixin gradient-top-lighten($color:#E8E8E8, $lighten:7%){
+  background-color: $color;
+  @include background-image(linear-gradient(lighten($color, $lighten) 0%, $color 100%));
+}
+
+// text shadow
+@mixin text-shadow($color:#000, $op:.4){
+  text-shadow: 0 1px 0 rgba($color, $op);
+}
+
+// bese button
+@mixin btn-base{
+  @include border-radius(3);
+  @include box-sizing(border-box);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  width: 126px;
+  line-height: 25px;
+}
+
+// font-size
+@mixin font-size($size, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+// border-radius
+@mixin border-radius($radius1,$radius2,$radius3,$radius4) {
+  -moz-border-radius: $radius1 + px $radius2 + px $radius3 + px $radius4 + px ;
+  -webkit-border-radius: $radius1 + px $radius2 + px $radius3 + px $radius4 + px ;
+  -o-border-radius: $radius1 + px $radius2 + px $radius3 + px $radius4 + px ;
+  -ms-border-radius: $radius1 + px $radius2 + px $radius3 + px $radius4 + px ;
+  border-radius: $radius1 + px $radius2 + px $radius3 + px $radius4 + px ;
+}
+
+// media query
+$breakpoint-pc: 641px;
+$breakpoint-sp: 640px;
+
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin arrow($color, $size, $border) {
+  position: absolute;
+  content: "";
+  vertical-align: middle;
+  width: $size + px;
+  height: $size + px;
+  border-top: $border + px solid $color;
+  border-right: $border + px solid $color;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+@mixin rotate($angle) {
+  -moz-transform: rotate($angle + deg);
+  -webkit-transform: rotate($angle + deg);
+  -o-transform: rotate($angle + deg);
+  -ms-transform: rotate($angle + deg);
+  transform: rotate($angle + deg);
+}
+// mixin 指定 ここまで

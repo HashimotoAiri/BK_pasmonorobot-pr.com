@@ -1,0 +1,5 @@
+
+# Redirect permanent / http://www.pasmo.co.jp/
+
+# すべて「http」にリダイレクト
+RedirectMatch 301 .* http://www.pasmo.co.jp/
